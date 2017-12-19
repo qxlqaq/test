@@ -1,0 +1,14 @@
+com\qxl\pojo\User.class
+com\qxl\user\mapper\UserMapper.class
+com\qxl\client\service\ClientService.class
+com\qxl\common\mapper\commonMapper.class
+com\qxl\client\controller\ClientController.class
+com\qxl\user\service\UserServiceImp.class
+com\qxl\user\service\UserService.class
+com\qxl\pojo\Client.class
+com\qxl\client\service\ClientServiceImp.class
+com\qxl\common\service\commonService.class
+com\qxl\util\VerifyCodeUtil.class
+com\qxl\util\MD5.class
+com\qxl\user\controller\UserController.class
+com\qxl\client\mapper\ClientMapper.class
