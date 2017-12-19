@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>阿拉德快递</title>
+<link rel="stylesheet" href="assets/css/amazeui.css" />
+<link rel="stylesheet" href="assets/css/common.min.css" />
+<link rel="stylesheet" href="assets/css/other.min.css" />
+</head>
+<body class="register-container">
+	<div class="layout">
+		<!--===========layout-header================-->
+		<div class="layout-header am-hide-sm-only">
+			<!--topbar start-->
+			<div class="topbar">
+				<div class="container">
+					<div class="am-g">
+						<div class="am-u-md-3">
+							<div class="topbar-left">
+								<i class="am-icon-globe"></i> 超大陆
+							</div>
+						</div>
+						<div class="am-u-md-9">
+							<div class="topbar-right am-text-right am-fr">
+								Follow us <i class="am-icon-facebook"></i> <i
+									class="am-icon-twitter"></i> <i class="am-icon-google-plus"></i>
+								<i class="am-icon-pinterest"></i> <i class="am-icon-instagram"></i>
+								<i class="am-icon-linkedin"></i> <i class="am-icon-youtube-play"></i>
+								<i class="am-icon-rss"></i> <a href="log" id="huanying1">登录</a>
+								<a href="save" id="huanying2">注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--topbar end-->
+
+
+			<div class="header-box" data-am-sticky>
+				<!--header start-->
+				<div class="container">
+					<div class="header">
+						<div class="am-g">
+							<div class="am-u-lg-2 am-u-sm-12">
+								<div class="logo">
+									<a href=""><img src="assets/images/alade.png" alt="" /></a>
+								</div>
+							</div>
+							<div class="am-u-md-10">
+								<div class="header-right am-fr">
+									<div class="header-contact">
+										<div class="header_contacts--item">
+											<div class="contact_mini">
+												<i style="color: #7c6aa6" class="contact-icon am-icon-phone"></i>
+												<strong>0 (855) 233-5385</strong> <span>周一~周五, 8:00 -
+													20:00</span>
+											</div>
+										</div>
+										<div class="header_contacts--item">
+											<div class="contact_mini">
+												<i style="color: #7c6aa6"
+													class="contact-icon am-icon-envelope-o"></i> <strong>1662176217@qq.com</strong>
+												<span>随时欢迎您的来信！</span>
+											</div>
+										</div>
+										<div class="header_contacts--item">
+											<div class="contact_mini">
+												<i style="color: #7c6aa6"
+													class="contact-icon am-icon-map-marker"></i> <strong>学府广场,</strong>
+												<span>B座17楼PHE项目组</span>
+											</div>
+										</div>
+									</div>
+									<a href="" class="contact-btn">
+										<button type="button"
+											class="am-btn am-btn-secondary am-radius">联系我们</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--header end-->
+
+
+				<!--nav start-->
+				<div class="nav-contain">
+					<div class="nav-inner">
+						<ul class="am-nav am-nav-pills am-nav-justify">
+							<li class=""><a href="index">首页</a></li>
+							<li><a href="orderCom" class="am-parent">物流</a> <!-- sub-menu start-->
+								<ul class="sub-menu" style="margin-left:34px">
+									<li class="menu-item"><a href="javascript:order()">我要寄件</a></li>
+									<li class="menu-item"><a href="orderCom">收寄标准原则</a></li>
+									<li class="menu-item"><a href="orderSelect">我要查单</a></li>
+								</ul> <!-- sub-menu end--></li>
+							<li><a href="about">关于我们</a></li>
+							<li><a href="join">加入我们</a></li>
+							<li><a href="contact">联系我们</a></li>
+						</ul>
+					</div>
+				</div>
+				<!--nav end-->
+			</div>
+		</div>
+
+		<!--mobile header start-->
+		<div class="m-header">
+			<div class="am-g am-show-sm-only">
+				<div class="am-u-sm-2">
+					<div class="menu-bars">
+						<a href="#doc-oc-demo1" data-am-offcanvas="{effect: 'push'}"><i
+							class="am-menu-toggle-icon am-icon-bars"></i></a>
+						<!-- 侧边栏内容 -->
+						<nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1"
+							data-am-menu-offcanvas>
+							<a href="javascript: void(0)" class="am-menu-toggle"></a>
+
+							<div class="am-offcanvas">
+								<div class="am-offcanvas-bar">
+									<ul class="am-menu-nav am-avg-sm-1">
+										<li class=""><a href="index">首页</a></li>
+										<li class="am-parent"><a href="orderCom" class="">物流</a>
+											<ul class="am-menu-sub am-collapse ">
+												<li class=""><a href="javascript:order()" class="">我要寄件</a>
+												</li>
+												<li class=""><a href="orderCom" class="">收寄标准原则</a></li>
+												<li class=""><a href="orderSelect" class="">我要查单</a></li>
+											</ul></li>
+										<li><a href="about">关于我们</a></li>
+										<li><a href="join">加入我们</a></li>
+										<li><a href="contact">联系我们</a></li>
+										<li class="nav-share-contain">
+											<div class="nav-share-links">
+												<i class="am-icon-facebook"></i> <i class="am-icon-twitter"></i>
+												<i class="am-icon-google-plus"></i> <i
+													class="am-icon-pinterest"></i> <i class="am-icon-instagram"></i>
+												<i class="am-icon-linkedin"></i> <i
+													class="am-icon-youtube-play"></i> <i class="am-icon-rss"></i>
+											</div>
+										</li>
+										<li class=""><a href="log" id="log1" class="">登录</a></li>
+										<li class=""><a href="save" id="log2" class="">注册</a></li>
+									</ul>
+
+								</div>
+							</div>
+						</nav>
+
+					</div>
+				</div>
+				<div class="am-u-sm-5 am-u-end">
+					<div class="m-logo">
+						<a href=""><img src="assets/images/alade.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<!--mobile header end-->
+		</div>
+
+	</div>
+
+
+	<!--===========layout-container================-->
+	<div class="register-box" style="margin-top: 5%">
+		<form action="" class="am-form" data-am-validator>
+			<fieldset>
+
+
+				<div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+					<ul class="am-tabs-nav am-cf">
+						<li class="am-active"><a href="tabs01">按照单号</a></li>
+						<li class=""><a href="show.html/[data-tab-panel-1]">按照手机号</a></li>
+						<li class=""><a href="[data-tab-panel-2]">微信查单</a></li>
+					</ul>
+					<div class="am-tabs-bd">
+						<div id="tabs01" class="am-tab-panel am-active">
+							<div class="am-form-group">
+								<div class="am-u-md">
+									<input type="text" id="Num" placeholder="输入正确的单号"
+										pattern="^\d{20}$" required />
+								</div>
+							</div>
+							<div class="am-g am-hide-sm">
+								<div class="am-u-md-10" style="margin-left: 4%">
+									<button class="am-btn am-btn-secondary" type="button"
+										id="NumButton">查询</button>
+								</div>
+							</div>
+							<div class="am-g am-hide-md-up">
+								<div class="am-u-md-10" style="margin-left: -7%"  >
+									<button  class="am-btn am-btn-secondary"  type="button"
+										id="NumButton1">查询</button>
+								</div>
+							</div>
+						</div>
+						<div data-tab-panel-1 class="am-tab-panel ">
+							<div class="am-form-group">
+								<div class="am-u-md">
+									<input type="text" id="Tel" placeholder="输入正确的手机号"
+										pattern="^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\d{8}$"
+										required />
+								</div>
+							</div>
+							<div class="am-g am-hide-sm">
+								<div class="am-u-md-10" style="margin-left: 4%">
+									<button alert=center class="am-btn am-btn-secondary" type="button"
+										id="TelButton">查询</button>
+								</div>
+								
+							</div>
+							<div class="am-g am-hide-md-up">
+								<div class="am-u-md-10" style="margin-left: -7%"  >
+									<button  class="am-btn am-btn-secondary"  type="button"
+										id="TelButton1">查询</button>
+								</div>
+							</div>
+						</div>
+						<div data-tab-panel-2 class="am-tab-panel ">
+								  <div class="am-cf am-hide-md-up ">
+									   <p class="am-align-left">
+											<img src="assets/images/2wm.png" />		
+									   </p>
+										  
+									  <span>关注微信公共号随时随地查运单</span>
+								  </div>
+								  <div class="am-hide-sm">
+									  <img src="assets/images/2wm.png" /> <span>关注微信公共号随时随地查运单</span>
+								  </div>
+							</div>
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-md-10 am-hide-sm" style="margin-left: 28%">
+						<button class="am-btn  am-btn-warning  am-radius" type="button"
+							onclick="order()">免费预约上门取件</button>
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-md-10 am-hide-md-up" style="margin-left: 25%">
+						<button class="am-btn  am-btn-warning  am-radius" type="button"
+							onclick="order()">免费预约上门取件</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		<div class="am-panel am-panel-default am-margin-top">
+			<div class="am-panel-bd">
+				<ul id="content" class="am-list am-list-static"></ul>
+			</div>
+		</div>
+		<div id="page"></div>
+
+
+
+	</div>
+
+
+
+
+
+
+	<!--===========layout-footer================-->
+	<div class="layout-footer">
+		<div class="footer">
+			<div style="background-color: #383d61" class="footer--bg"></div>
+			<div class="footer--inner">
+				<div class="container">
+					<div class="footer_main">
+						<div class="am-g">
+							<div class="am-u-md-5 ">
+								<div class="footer_main--column">
+									<strong class="footer_main--column_title">关于我们</strong>
+									<div class="footer_about">
+										<p class="footer_about--text">阿拉德(Alard.)
+											2017年，诞生于河南郑州。自成立以来始终专注于服务质量的提升，持续加强基础建设，积极研发和引进具有高科技含量的信息技术与设备以提升作业自动化水平，在国内外建立了庞大的信息采集，市场开发，物流配送，快件收派等速运业务机构及服务网络。
+										</p>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="am-u-md-5 ">
+								<div class="footer_main--column">
+									<strong class="footer_main--column_title">联系详情</strong>
+									<ul class="footer_contact_info">
+										<li class="footer_contact_info--item"><i
+											class="am-icon-phone"></i><span>服务专线：400 069 0309</span></li>
+										<li class="footer_contact_info--item"><i
+											class="am-icon-envelope-o"></i><span>1662176217.qq.com</span></li>
+										<li class="footer_contact_info--item"><i
+											class="am-icon-map-marker"></i><span>河南省郑州市郑东新区龙子湖湖心岛学府广场B座17层PHE项目组</span></li>
+										<li class="footer_contact_info--item"><i
+											class="am-icon-clock-o"></i><span>Monday - Friday, 9am
+												- 6 pm; </span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/common.js" charset="utf-8"></script>
+	<script src="assets/js/jquery-2.1.0.js" charset="utf-8"></script>
+	<script src="assets/js/amazeui.js" charset="utf-8"></script>
+	<script src="assets/js/paginator.js" charset="utf-8"></script>
+	<script src="assets/js/commont.js" charset="utf-8"></script>
+	<script type="text/javascript">
+		//var data;
+		var data;
+		/* window.onload=$.getJSONP("http://cxc123.gnway.cc/Hello/cxc/findAllOrderTEST",
+			    function (data) {
+		    alert(data);
+		}
+		); */
+
+		jQuery.support.cors = true;
+		$(document)
+				.ready(
+						function() {
+
+							$('#NumButton')
+									.click(
+											function() {
+												$("#page").empty();
+												var orderoid = $("#Num").val();
+												$
+														.ajax({
+															url : "http://fulin980614.gnway.cc/ComeOnFuLin_03/cxc/findByOrderDate?orderoid="
+																	+ orderoid,
+															type : 'GET',
+															dataType : 'JSON',
+															async : true,
+															success : function(
+																	result) {
+
+																var data = result;
+																var nums = 5; //每页出现的数量
+
+																var pages = Math
+																		.ceil(data.length
+																				/ nums); //得到总页数
+																if (pages == 1) {
+																	pages = pages + 1;
+																}
+
+																var thisDate = function(
+																		curr) {
+																	//此处只是演示，实际场景通常是返回已经当前页已经分组好的数据
+																	var str = '', last = curr
+																			* nums
+																			- 1;
+																	last = last >= data.length ? (data.length - 1)
+																			: last;
+																	for (var i = (curr
+																			* nums - nums); i <= last; i++) {
+																		str += '<li>'
+																				+ data[i]
+																				+ '</li>';
+
+																	}
+																	return str;
+																};
+																//返回的是一个page示例，拥有实例方法
+																var $page = $(
+																		'#page')
+																		.page(
+																				{
+																					pages : pages, //页数
+																					curr : 1, //当前页 
+																					type : 'default', //主题
+																					groups : 1, //连续显示分页数
+																					prev : '<', //若不显示，设置false即可
+			 	         next: '>', //若不显示，设置false即可        
+																					first : "首页",
+																					last : false, //false则不显示"尾页"
+																					before : function(
+																							context,
+																							next) { //加载前触发，如果没有执行next()则中断加载
+																						console
+																								.log('开始加载...');
+																						context.time = (new Date())
+																								.getTime(); //只是演示，并没有什么卵用，可以保存一些数据到上下文中
+																						next();
+																					},
+																					render : function(
+																							context,
+																							$el,
+																							index) {//渲染[context：对this的引用，$el：当前元素，index：当前索引]
+
+																						//逻辑处理
+																						if (index == 'last') { //虽然上面设置了last的文字为尾页，但是经过render处理，结果变为最后一页
+																							$el
+																									.find(
+																											'a')
+																									.html(
+																											'最后一页');
+																							return $el; //如果有返回值则使用返回值渲染
+																						}
+																						return false; //没有返回值则按默认处理
+																					},
+																					after : function(
+																							context,
+																							next) {
+																						var time = (new Date())
+																								.getTime(); //没有什么卵用的演示
+																						console
+																								.log('分页组件加载完毕，耗时：'
+																										+ (time - context.time)
+																										+ 'ms');
+																						next();
+																					},
+																					/*
+																					 * 触发分页后的回调，如果首次加载时后端已处理好分页数据则需要在after中判断终止或在jump中判断first是否为假
+																					 */
+																					jump : function(
+																							context,
+																							first) {
+																						console
+																								.log('当前第：'
+																										+ context.option.curr
+																										+ "页");
+																						$(
+																								'#content')
+																								.html(
+																										thisDate(context.option.curr));
+																					}
+																				});
+																//return false; 
+															}
+														});
+											});
+							$('#NumButton1').click(
+											function() {
+												$("#page").empty();
+												var orderoid = $("#Num").val();
+												$
+														.ajax({
+															url : "http://fulin980614.gnway.cc/ComeOnFuLin_03/cxc/findByOrderDate?orderoid="
+																	+ orderoid,
+															type : 'GET',
+															dataType : 'JSON',
+															async : true,
+															success : function(
+																	result) {
+
+																var data = result;
+																var nums = 5; //每页出现的数量
+
+																var pages = Math
+																		.ceil(data.length
+																				/ nums); //得到总页数
+																if (pages == 1) {
+																	pages = pages + 1;
+																}
+
+																var thisDate = function(
+																		curr) {
+																	//此处只是演示，实际场景通常是返回已经当前页已经分组好的数据
+																	var str = '', last = curr
+																			* nums
+																			- 1;
+																	last = last >= data.length ? (data.length - 1)
+																			: last;
+																	for (var i = (curr
+																			* nums - nums); i <= last; i++) {
+																		str += '<li>'
+																				+ data[i]
+																				+ '</li>';
+
+																	}
+																	return str;
+																};
+																//返回的是一个page示例，拥有实例方法
+																var $page = $(
+																		'#page')
+																		.page(
+																				{
+																					pages : pages, //页数
+																					curr : 1, //当前页 
+																					type : 'default', //主题
+																					groups : 1, //连续显示分页数
+																					prev : '<', //若不显示，设置false即可
+			 	         next: '>', //若不显示，设置false即可        
+																					first : "首页",
+																					last : false, //false则不显示"尾页"
+																					before : function(
+																							context,
+																							next) { //加载前触发，如果没有执行next()则中断加载
+																						console
+																								.log('开始加载...');
+																						context.time = (new Date())
+																								.getTime(); //只是演示，并没有什么卵用，可以保存一些数据到上下文中
+																						next();
+																					},
+																					render : function(
+																							context,
+																							$el,
+																							index) {//渲染[context：对this的引用，$el：当前元素，index：当前索引]
+
+																						//逻辑处理
+																						if (index == 'last') { //虽然上面设置了last的文字为尾页，但是经过render处理，结果变为最后一页
+																							$el
+																									.find(
+																											'a')
+																									.html(
+																											'最后一页');
+																							return $el; //如果有返回值则使用返回值渲染
+																						}
+																						return false; //没有返回值则按默认处理
+																					},
+																					after : function(
+																							context,
+																							next) {
+																						var time = (new Date())
+																								.getTime(); //没有什么卵用的演示
+																						console
+																								.log('分页组件加载完毕，耗时：'
+																										+ (time - context.time)
+																										+ 'ms');
+																						next();
+																					},
+																					/*
+																					 * 触发分页后的回调，如果首次加载时后端已处理好分页数据则需要在after中判断终止或在jump中判断first是否为假
+																					 */
+																					jump : function(
+																							context,
+																							first) {
+																						console
+																								.log('当前第：'
+																										+ context.option.curr
+																										+ "页");
+																						$(
+																								'#content')
+																								.html(
+																										thisDate(context.option.curr));
+																					}
+																				});
+																//return false; 
+															}
+														});
+											});
+							$('#TelButton1')
+									.click(
+											function() {
+												$("#page").empty();
+												var ordertelephone = $("#Tel").val();
+												$
+														.ajax({
+															url : "http://fulin980614.gnway.cc/ComeOnFuLin_03/cxc/findByOrderDate?ordertelephone="
+																+ ordertelephone,
+															type : 'GET',
+															dataType : 'JSON',
+															async : true,
+															success : function(
+																	result) {
+
+																var data = result;
+																var nums = 5; //每页出现的数量
+
+																var pages = Math
+																		.ceil(data.length
+																				/ nums); //得到总页数
+																if (pages == 1) {
+																	pages = pages + 1;
+																}
+
+																var thisDate = function(
+																		curr) {
+																	//此处只是演示，实际场景通常是返回已经当前页已经分组好的数据
+																	var str = '', last = curr
+																			* nums
+																			- 1;
+																	last = last >= data.length ? (data.length - 1)
+																			: last;
+																	for (var i = (curr
+																			* nums - nums); i <= last; i++) {
+																		str += '<li>'
+																				+ data[i]
+																				+ '</li>';
+
+																	}
+																	return str;
+																};
+																//返回的是一个page示例，拥有实例方法
+																var $page = $(
+																		'#page')
+																		.page(
+																				{
+																					pages : pages, //页数
+																					curr : 1, //当前页 
+																					type : 'default', //主题
+																					groups : 1, //连续显示分页数
+																					prev : '<', //若不显示，设置false即可
+			 	         next: '>', //若不显示，设置false即可        
+																					first : "首页",
+																					last : false, //false则不显示"尾页"
+																					before : function(
+																							context,
+																							next) { //加载前触发，如果没有执行next()则中断加载
+																						console
+																								.log('开始加载...');
+																						context.time = (new Date())
+																								.getTime(); //只是演示，并没有什么卵用，可以保存一些数据到上下文中
+																						next();
+																					},
+																					render : function(
+																							context,
+																							$el,
+																							index) {//渲染[context：对this的引用，$el：当前元素，index：当前索引]
+
+																						//逻辑处理
+																						if (index == 'last') { //虽然上面设置了last的文字为尾页，但是经过render处理，结果变为最后一页
+																							$el
+																									.find(
+																											'a')
+																									.html(
+																											'最后一页');
+																							return $el; //如果有返回值则使用返回值渲染
+																						}
+																						return false; //没有返回值则按默认处理
+																					},
+																					after : function(
+																							context,
+																							next) {
+																						var time = (new Date())
+																								.getTime(); //没有什么卵用的演示
+																						console
+																								.log('分页组件加载完毕，耗时：'
+																										+ (time - context.time)
+																										+ 'ms');
+																						next();
+																					},
+																					/*
+																					 * 触发分页后的回调，如果首次加载时后端已处理好分页数据则需要在after中判断终止或在jump中判断first是否为假
+																					 */
+																					jump : function(
+																							context,
+																							first) {
+																						console
+																								.log('当前第：'
+																										+ context.option.curr
+																										+ "页");
+																						$(
+																								'#content')
+																								.html(
+																										thisDate(context.option.curr));
+																					}
+																				});
+																//return false; 
+															}
+														});
+											});
+							$('#TelButton')
+									.click(
+											function() {
+												$("#page").empty();
+												var ordertelephone = $("#Tel")
+														.val();
+
+												$.ajax({
+															url : "http://fulin980614.gnway.cc/ComeOnFuLin_03/cxc/findByOrderDate?ordertelephone="
+																	+ ordertelephone,
+															type : 'GET',
+															dataType : 'JSON',
+															async : true,
+															success : function(
+																	result) {
+																data = result;
+
+																var nums = 4; //每页出现的数量
+																var pages = Math
+																		.ceil(data.length
+																				/ nums); //得到总页数
+																if (pages == 1) {
+																	pages = pages + 1;
+																}
+																var thisDate = function(
+																		curr) {
+																	//此处只是演示，实际场景通常是返回已经当前页已经分组好的数据
+																	var str = '', last = curr
+																			* nums
+																			- 1;
+																	last = last >= data.length ? (data.length - 1)
+																			: last;
+																	for (var i = (curr
+																			* nums - nums); i <= last; i++) {
+																		str += '<li>'
+																				+ data[i]
+																				+ '</li>';
+																	}
+																	return str;
+																};
+																//返回的是一个page示例，拥有实例方法
+																var $page = $(
+																		"#page")
+																		.page(
+																				{
+																					pages : pages, //页数
+																					curr : 1, //当前页 
+																					type : 'default', //主题
+																					groups : 2, //连续显示分页数
+																					prev : '<', //若不显示，设置false即可
+				 	         next: '>', //若不显示，设置false即可        
+																					first : "首页",
+																					last : false, //false则不显示"尾页"
+																					before : function(
+																							context,
+																							next) { //加载前触发，如果没有执行next()则中断加载
+																						console
+																								.log('开始加载...');
+																						context.time = (new Date())
+																								.getTime(); //只是演示，并没有什么卵用，可以保存一些数据到上下文中
+																						next();
+																					},
+																					render : function(
+																							context,
+																							$el,
+																							index) { //渲染[context：对this的引用，$el：当前元素，index：当前索引]
+																						//逻辑处理
+																						if (index == 'last') { //虽然上面设置了last的文字为尾页，但是经过render处理，结果变为最后一页
+																							$el
+																									.find(
+																											'a')
+																									.html(
+																											'最后一页');
+																							return $el; //如果有返回值则使用返回值渲染
+																						}
+																						return false; //没有返回值则按默认处理
+																					},
+																					after : function(
+																							context,
+																							next) { //加载完成后触发
+																						var time = (new Date())
+																								.getTime(); //没有什么卵用的演示
+																						console
+																								.log('分页组件加载完毕，耗时：'
+																										+ (time - context.time)
+																										+ 'ms');
+																						next();
+																					},
+																					/*
+																					 * 触发分页后的回调，如果首次加载时后端已处理好分页数据则需要在after中判断终止或在jump中判断first是否为假
+																					 */
+																					jump : function(
+																							context,
+																							first) {
+																						console
+																								.log('当前第：'
+																										+ context.option.curr
+																										+ "页");
+																						$(
+																								"#content")
+																								.html(
+																										thisDate(context.option.curr));
+																					}
+																				});
+																//return false; 
+															}
+														});
+											});
+
+						})
+
+	</script>

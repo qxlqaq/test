@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>阿拉德快递</title>
+<link rel="stylesheet" href="assets/css/amazeui.css" />
+<link rel="stylesheet" href="assets/css/other.min.css" />
+<!--//验证码css-->
+<link href="assets/css/jquery.idcode.css" type="text/css"
+	rel="stylesheet">
+<script src="assets/js/jquery-2.1.0.js" charset="utf-8"></script>
+<script src="assets/js/amazeui.js" charset="utf-8"></script>
+<script src="assets/js/commont.js" charset="utf-8"></script>
+<!--//引用idcode插件-->
+<script src="assets/js/jquery.idcode.js"></script>
+<script>
+	function register(){
+		window.location.href="save";
+	}
+	function changeImg() {
+		//var img = document.getElementById("img"); 
+		var dat = new Date();
+		//alert(dat);
+		//当前日期，从不重复
+		$("#imgs").attr("src","http://localhost:8088/baozha/client/verify.action?date="+ dat);
+	  }
+	
+	function  sendJson() {
+		
+		$("#myLogin").button('loading');
+		setTimeout(function(){
+		$("#myLogin").button('reset');
+		}, 3000);
+		//请求json响应json
+		/* alert("开始时执行"); */
+		login = {
+			cname : $("#cname").val(),
+			cpassword : $("#cpassword").val(),
+			verify: $("#verify").val()
+		};
+		$.ajax({
+			type : "post",
+			url : "http://localhost:8088/baozha/client/login.action",
+			contentType : "application/json;charset=utf-8",
+			data : JSON.stringify(login),
+			success : function(data) {
+				 //alert(data.str); 
+				//var result = eval('('+ data +')');
+				//alert(result.str);
+				var str=data.str;
+				 setTimeout(function () {
+				if(str==true)
+				{	
+					//alert("登录成功点击跳转页面")
+					
+						 this.location.href = "index" 
+					//window.location.href="";
+				}else
+				{
+					$("#loginState").empty();
+					$("#loginState").text(str);
+					changeImg();
+				}
+				 }, 2000);
+			}
+		 }
+		);
+	  }
+	
+	  function order()
+	  {
+		  $.ajax({
+				url:"http://localhost:8088/baozha/client/getUserName.action",
+				async:true,
+				success:function(data){
+					var result=eval('('+data+')');
+					var name=result.username;
+					//alert(name);
+					if(name!=undefined)
+					{	
+						window.location.href="order";
+					}else {
+						window.location.href="log";
+					}
+				}
+			});
+	  }
+</script>
+</head>
+
+
+<body class="login-container">
+	<div class="login-box" style="margin-top: -150px">
+		<div class="logo-img am-hide-sm" style="margin-left: -40%">
+			<img src="assets/images/alade01.png" alt="" />
+		</div>
+		<div class="logo-img am-hide-md-up"
+			style="margin-left: -5px; margin-top: 130px; margin-bottom: 10px"" >
+			<img src="assets/images/alade01.png" height="150px" width="370px"
+				alt="" />
+		</div>
+		<form action="" class="am-form ">
+			<div class="am-form-group  " style=""30px">
+				<label for="doc-vld-name-2"><i class="am-icon-user"></i></label> <input
+					type="text" id="cname" minlength="3" placeholder="请输入用户名（至少 3 个字符）"
+					required />
+			</div>
+
+			<div class="am-form-group">
+				<label for=""><i class="am-icon-user-secret"></i></label> <input
+					type="password" id="cpassword" placeholder="请输入密码" required />
+			</div>
+
+			<div class="am-form-group ">
+				<label for=""><i class="am-icon-user-secret"></i></label> <input
+					type="text" id="verify" name="verify" style="width: 50%"
+					placeholder="请输入验证码" class="txtVerification"> <span>
+					<img id="imgs" onclick="changeImg();"
+					style="position: absolute; margin-left: 35px; margin-top: -10px"
+					src="http://localhost:8088/baozha/client/verify.action">
+				</span>
+
+			</div>
+
+			<div style="margin: 0">
+				<div class="checkbox am-hide-sm">
+					<label> <input type="checkbox"> <span
+						style="font-weight: lighter; font-size: 12px;">记住密码</span>
+					</label> <label> <a href="update" style="margin-left: 205px"> <span
+							style="font-weight: lighter; font-size: 12px;">忘记密码</span></a>
+					</label>
+				</div>
+				<div class="checkbox am-hide-md-up">
+					<label> <input type="checkbox"> <span
+						style="font-weight: lighter; font-size: 12px;">记住密码</span>
+					</label> <label> <a href="update" style="margin-left: 170px"> <span
+							style="font-weight: lighter; font-size: 12px;">忘记密码</span></a>
+					</label>
+				</div>
+
+			</div>
+			<label id="loginState"></label>
+			<button class="am-btn am-btn-secondary btn-loading-example" 
+					type="button" id="myLogin"
+					style="margin-bottom: -10%; margin-top: 5px" onclick="sendJson()"
+					data-am-loading="{spinner: 'circle-o-notch', loadingText: '加载中...', resetText: '加载失败'}"
+				>登录</button>
+			<button class="am-btn am-btn-secondary" type="button"
+				onclick="register()">注册</button>
+		</form>
+		<a href="index" class="am-hide-sm" style="margin-left: 25%">不登录，直接进入首页</a>
+		<a href="index" class="am-hide-md-up" style="margin-left: 26%">不登录，直接进入首页</a>
+	</div>
+
+</body>
+</html>

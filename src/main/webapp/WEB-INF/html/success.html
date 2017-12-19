@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>阿拉德快递</title>
+  <link rel="stylesheet" href="assets/css/amazeui.css" />
+  <link rel="stylesheet" href="assets/css/common.min.css" />
+  <link rel="stylesheet" href="assets/css/other.min.css" />
+</head>
+<body class="register-container">
+  <div class="layout">
+    <!--===========layout-header================-->
+    <div class="layout-header am-hide-sm-only">
+      <!--topbar start-->
+      <div class="topbar">
+        <div class="container">
+          <div class="am-g">
+            <div class="am-u-md-3">
+              <div class="topbar-left">
+                <i class="am-icon-globe"></i>
+				超大陆
+              </div>
+            </div>
+            <div class="am-u-md-9">
+              <div class="topbar-right am-text-right am-fr">
+                Follow us
+                <i class="am-icon-facebook"></i>
+                <i class="am-icon-twitter"></i>
+                <i class="am-icon-google-plus"></i>
+                <i class="am-icon-pinterest"></i>
+                <i class="am-icon-instagram"></i>
+                <i class="am-icon-linkedin"></i>
+                <i class="am-icon-youtube-play"></i>
+                <i class="am-icon-rss"></i>
+                <a href="log" id="huanying1" >登录</a>
+                <a href="save" id="huanying2" >注册</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--topbar end-->
+      <div class="header-box" data-am-sticky>
+        <!--header start-->
+          <div class="container">
+            <div class="header">
+              <div class="am-g">
+                <div class="am-u-lg-2 am-u-sm-12">
+                  <div class="logo">
+                    <a href=""><img src="assets/images/alade.png" alt="" /></a>
+                  </div>
+                </div>
+                <div class="am-u-md-10">
+                  <div class="header-right am-fr">
+                    <div class="header-contact">
+                      <div class="header_contacts--item">
+  											<div class="contact_mini">
+  												<i style="color:#7c6aa6" class="contact-icon am-icon-phone"></i>
+  												<strong>0 (855) 233-5385</strong>
+  												<span>周一~周五, 8:00 - 20:00</span>
+  											</div>
+  										</div>
+                      <div class="header_contacts--item">
+  											<div class="contact_mini">
+  												<i style="color:#7c6aa6" class="contact-icon am-icon-envelope-o"></i>
+  												<strong>1662176217@qq.com</strong>
+  												<span>随时欢迎您的来信！</span>
+  											</div>
+  										</div>
+                      <div class="header_contacts--item">
+  											<div class="contact_mini">
+  												<i style="color:#7c6aa6" class="contact-icon am-icon-map-marker"></i>
+  												<strong>学府广场,</strong>
+  												<span>B座17楼PHE项目组</span>
+  											</div>
+  										</div>
+                    </div>
+                    <a href="contact" class="contact-btn">
+                      <button type="button" class="am-btn am-btn-secondary am-radius">联系我们</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--header end-->
+
+
+        <!--nav start-->
+        <div class="nav-contain">
+          <div class="nav-inner">
+            <ul class="am-nav am-nav-pills am-nav-justify">
+              <li class=""><a href="index">首页</a></li>
+              <li>
+                <a href="orderCom" class="am-parent">物流</a>
+                <!-- sub-menu start-->
+                <ul class="sub-menu" style="margin-left:34px">
+                  <li class="menu-item" onclick="order()"><a href="">我要寄件</a></li>
+                  <li class="menu-item"><a href="orderCom">收寄标准原则</a></li>
+                  <li class="menu-item"><a href="orderSelect">我要查单</a></li>
+                </ul>
+                <!-- sub-menu end-->
+              </li>
+              <li><a href="about">关于我们</a></li>
+              <li><a href="join">加入我们</a></li>
+              <li><a href="contact">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--nav end-->
+      </div>
+    </div>
+
+    <!--mobile header start-->
+    <div class="m-header">
+      <div class="am-g am-show-sm-only">
+        <div class="am-u-sm-2">
+          <div class="menu-bars">
+            <a href="#doc-oc-demo1" data-am-offcanvas="{effect: 'push'}"><i class="am-menu-toggle-icon am-icon-bars"></i></a>
+            <!-- 侧边栏内容 -->
+            <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas >
+            <a href="javascript: void(0)" class="am-menu-toggle"></a>
+
+            <div class="am-offcanvas" >
+              <div class="am-offcanvas-bar">
+              <ul class="am-menu-nav am-avg-sm-1">
+                  <li><a href="index" class="" >首页</a></li>
+                  <li class="am-parent">
+                    <a href="orderCom" class="" >物流</a>
+                      <ul class="am-menu-sub am-collapse ">
+                          <li class="" onclick="order()">
+                            <a href="" class="" >我要寄件</a>
+                          </li>
+                          <li class="">
+                            <a href="orderCom" class="" >收寄标准原则</a>
+                          </li>
+                          <li class="">
+                            <a href="orderSelect" class="" >我要查单</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class=""><a href="about" class="" >关于我们</a></li>
+                  <li class=""><a href="join" class="" >加入我们</a></li>
+                  <li class=""><a href="contact" class="" >联系我们</a></li>
+                  <li class="nav-share-contain">
+                    <div class="nav-share-links">
+                      <i class="am-icon-facebook"></i>
+                      <i class="am-icon-twitter"></i>
+                      <i class="am-icon-google-plus"></i>
+                      <i class="am-icon-pinterest"></i>
+                      <i class="am-icon-instagram"></i>
+                      <i class="am-icon-linkedin"></i>
+                      <i class="am-icon-youtube-play"></i>
+                      <i class="am-icon-rss"></i>
+                    </div>
+                  </li>
+                  <li class=""><a href="log" id="log1">登录</a></li>
+                  <li class=""><a href="save" id="log2" >注册</a></li>
+              </ul>
+              </div>
+            </div>
+          </nav>
+          </div>
+        </div>
+        <div class="am-u-sm-5 am-u-end">
+          <div class="m-logo">
+            <a href=""><img src="assets/images/alade.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    <!--mobile header end-->
+    </div>
+
+
+
+    <!--===========layout-container================-->
+    <div class="register-box">
+      <form action="" class="am-form" data-am-validator>
+        <fieldset>
+          <label id="oid"></label>
+		  <p class="register-info">目前正对您的预约信息审核中，通过后会有快递员前来取件请您近期手机保持通畅</p>
+          
+          <div class="am-g am-hide-sm" style="margin-left:-70px">
+            <div class="am-u-md-3">
+              <button class="am-btn am-btn-secondary" type="button" onclick="indexx()">返回首页</button>
+            </div>
+			<div class="am-u-md-6">
+              <button class="am-btn am-btn-secondary" type="button" onclick="selects()">快递查单</button>
+            </div>
+          </div>
+		  <div class="am-g am-hide-md-up" style="">
+            <div class="am-u-md-3">
+              <button class="am-btn am-btn-secondary" type="button" onclick="indexx()">返回首页</button>
+            </div>
+			<div class="am-u-md-6">
+              <button class="am-btn am-btn-secondary" type="button" onclick="selects()">快递查单</button>
+            </div>
+          </div>
+		  
+		  
+        </fieldset>
+      </form>
+    </div>
+
+  </div>
+
+
+
+  <!--===========layout-footer================-->
+  <div class="layout-footer">
+    <div class="footer">
+      <div style="background-color:#383d61" class="footer--bg"></div>
+      <div class="footer--inner">
+        <div class="container">
+          <div class="footer_main">
+            <div class="am-g">
+              <div class="am-u-md-5 ">
+                <div class="footer_main--column">
+                  <strong class="footer_main--column_title">关于我们</strong>
+                  <div class="footer_about">
+                      <p class="footer_about--text">
+                        阿拉德(Alard.) 2017年，诞生于河南郑州。自成立以来始终专注于服务质量的提升，持续加强基础建设，积极研发和引进具有高科技含量的信息技术与设备以提升作业自动化水平，在国内外建立了庞大的信息采集，市场开发，物流配送，快件收派等速运业务机构及服务网络。
+                      </p>
+                    </div>
+                </div>
+              </div>
+
+            
+              <div class="am-u-md-5 ">
+                <div class="footer_main--column">
+                  <strong class="footer_main--column_title">联系详情</strong>
+                  <ul class="footer_contact_info">
+                    <li class="footer_contact_info--item"><i class="am-icon-phone"></i><span>服务专线：400 069 0309</span></li>
+                    <li class="footer_contact_info--item"><i class="am-icon-envelope-o"></i><span>1662176217.qq.com</span></li>
+                    <li class="footer_contact_info--item"><i class="am-icon-map-marker"></i><span>河南省郑州市郑东新区龙子湖湖心岛学府广场B座17层PHE项目组</span></li>
+                    <li class="footer_contact_info--item"><i class="am-icon-clock-o"></i><span>Monday - Friday, 9am - 6 pm; </span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/common.js" charset="utf-8"></script>
+  <script src="assets/js/jquery-2.1.0.js" charset="utf-8"></script>
+  <script src="assets/js/amazeui.js" charset="utf-8"></script>
+  <script src="assets/js/commont.js" charset="utf-8"></script>
+  <script type="text/javascript">
+	function indexx(){
+		window.location.href="index";
+	}
+	function selects(){
+		window.location.href="orderSelect";
+	}
+	function GetRequest() {
+		   var url = location.search; //获取url中"?"符后的字串
+		   if (url.indexOf("?") != -1) {    //判断是否有参数
+		      var str = url.substr(1); //从第一个字符开始 因为第0个是?号 获取所有除问号的所有符串
+		      strs = str.split("=");   //用等号进行分隔 （因为知道只有一个参数 所以直接用等号进分隔 如果有多个参数 要用&号分隔 再用等号进行分隔）
+		      $("#oid").text("预约成功！！！您的订单号为："+strs[1]);       //直接弹出第一个参数 （如果有多个参数 还要进行循环的）
+		   }
+		}
+	
+
+  </script>
+</body>
+
+</html>

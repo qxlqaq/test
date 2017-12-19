@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>阿拉德快递</title>
+<link rel="stylesheet" href="assets/css/amazeui.css" />
+<link rel="stylesheet" href="assets/css/common.min.css" />
+<link rel="stylesheet" href="assets/css/other.min.css" />
+</head>
+<style>
+.divcss5 {
+	text-indent: 25px
+}
+</style>
+<body>
+  <div class="layout">
+    <!--===========layout-header================-->
+    <div class="layout-header am-hide-sm-only">
+      <!--topbar start-->
+      <div class="topbar">
+        <div class="container">
+          <div class="am-g">
+            <div class="am-u-md-3">
+              <div class="topbar-left">
+                <i class="am-icon-globe"></i>
+				超大陆
+              </div>
+            </div>
+            <div class="am-u-md-9">
+              <div class="topbar-right am-text-right am-fr">
+                Follow us
+                <i class="am-icon-facebook"></i>
+                <i class="am-icon-twitter"></i>
+                <i class="am-icon-google-plus"></i>
+                <i class="am-icon-pinterest"></i>
+                <i class="am-icon-instagram"></i>
+                <i class="am-icon-linkedin"></i>
+                <i class="am-icon-youtube-play"></i>
+                <i class="am-icon-rss"></i>
+                <a href="log" id="huanying1" >登录</a>
+                <a href="save" id="huanying2" >注册</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--topbar end-->
+      <div class="header-box" data-am-sticky>
+        <!--header start-->
+          <div class="container">
+            <div class="header">
+              <div class="am-g">
+                <div class="am-u-lg-2 am-u-sm-12">
+                  <div class="logo">
+                    <a href=""><img src="assets/images/alade.png" alt="" /></a>
+                  </div>
+                </div>
+                <div class="am-u-md-10">
+                  <div class="header-right am-fr">
+                    <div class="header-contact">
+                      <div class="header_contacts--item">
+  											<div class="contact_mini">
+  												<i style="color:#7c6aa6" class="contact-icon am-icon-phone"></i>
+  												<strong>0 (855) 233-5385</strong>
+  												<span>周一~周五, 8:00 - 20:00</span>
+  											</div>
+  										</div>
+                      <div class="header_contacts--item">
+  											<div class="contact_mini">
+  												<i style="color:#7c6aa6" class="contact-icon am-icon-envelope-o"></i>
+  												<strong>1662176217@qq.com</strong>
+  												<span>随时欢迎您的来信！</span>
+  											</div>
+  										</div>
+                      <div class="header_contacts--item">
+  											<div class="contact_mini">
+  												<i style="color:#7c6aa6" class="contact-icon am-icon-map-marker"></i>
+  												<strong>学府广场,</strong>
+  												<span>B座17楼PHE项目组</span>
+  											</div>
+  										</div>
+                    </div>
+                    <a href="contact" class="contact-btn">
+                      <button type="button" class="am-btn am-btn-secondary am-radius">联系我们</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--header end-->
+
+
+        <!--nav start-->
+        <div class="nav-contain">
+          <div class="nav-inner">
+            <ul class="am-nav am-nav-pills am-nav-justify">
+              <li class=""><a href="index">首页</a></li>
+              <li>
+                <a href="orderCom" class="am-parent">物流</a>
+                <!-- sub-menu start-->
+                <ul class="sub-menu" style="margin-left:34px">
+                  <li class="menu-item"><a href="javascript:order()">我要寄件</a></li>
+                  <li class="menu-item"><a href="orderCom">收寄标准原则</a></li>
+                  <li class="menu-item"><a href="orderSelect">我要查单</a></li>
+                </ul>
+                <!-- sub-menu end-->
+              </li>
+              <li><a href="about">关于我们</a></li>
+              <li><a href="join">加入我们</a></li>
+              <li><a href="contact">联系我们</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--nav end-->
+      </div>
+    </div>
+
+    <!--mobile header start-->
+    <div class="m-header">
+      <div class="am-g am-show-sm-only">
+        <div class="am-u-sm-2">
+          <div class="menu-bars">
+            <a href="#doc-oc-demo1" data-am-offcanvas="{effect: 'push'}"><i class="am-menu-toggle-icon am-icon-bars"></i></a>
+            <!-- 侧边栏内容 -->
+            <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1" data-am-menu-offcanvas >
+            <a href="javascript: void(0)" class="am-menu-toggle"></a>
+
+            <div class="am-offcanvas" >
+              <div class="am-offcanvas-bar">
+              <ul class="am-menu-nav am-avg-sm-1">
+                  <li><a href="index" class="" >首页</a></li>
+                  <li class="am-parent">
+                    <a href="orderCom" class="" >物流</a>
+                      <ul class="am-menu-sub am-collapse ">
+                          <li class="">
+                            <a href="javascript:order()" class="" >我要寄件</a>
+                          </li>
+                          <li class="">
+                            <a href="orderCom" class="" >收寄标准原则</a>
+                          </li>
+                          <li class="">
+                            <a href="orderSelect" class="" >我要查单</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class=""><a href="about" class="" >关于我们</a></li>
+                  <li class=""><a href="join" class="" >加入我们</a></li>
+                  <li class=""><a href="contact" class="" >联系我们</a></li>
+                  <li class="nav-share-contain">
+                    <div class="nav-share-links">
+                      <i class="am-icon-facebook"></i>
+                      <i class="am-icon-twitter"></i>
+                      <i class="am-icon-google-plus"></i>
+                      <i class="am-icon-pinterest"></i>
+                      <i class="am-icon-instagram"></i>
+                      <i class="am-icon-linkedin"></i>
+                      <i class="am-icon-youtube-play"></i>
+                      <i class="am-icon-rss"></i>
+                    </div>
+                  </li>
+                  <li class=""><a href="log" id="log1">登录</a></li>
+                  <li class=""><a href="save" id="log2" >注册</a></li>
+              </ul>
+              </div>
+            </div>
+          </nav>
+          </div>
+        </div>
+        <div class="am-u-sm-5 am-u-end">
+          <div class="m-logo">
+            <a href=""><img src="assets/images/alade.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    <!--mobile header end-->
+    </div>
+    
+	<!--===========layout-container================-->
+
+	<div
+		style="width: 800px; margin-left: 27%; margin-top: 5%; font-size: 1.4rem;"
+		class="am-hide-sm">
+		<fieldset>
+
+			<div>收寄原则：</div>
+			<div>一、禁止收寄：禁止收取易燃、易爆、易腐蚀、有毒、放射性及违法物品。</div>
+			<br />
+			<div>二、限制收寄：</div>
+			<div class="divcss5">尺寸和重量：</div>
+			<div
+				style="display: inline-block; text-align: lift; margin-left: 25px;">
+				<div class="">
+					①陆运快件：单件计费重量不超过130KG或三边（长、宽、高）分别不超过2.5米、1.5米、1.5米；</div>
+				<br />
+				<div class="">②航空快件：单件计费重量不超过80KG或三边（长、宽、高）分别不超过2.5米、1米、0.8米；</div>
+				<br />
+				<div class="">特殊说明：顺丰时效产品需按照各时效产品的重量及尺寸要求执行。</div>
+				<div class="">
+					航空限制：原商业包装液体、膏状、粉末类食品可通过航空方式发运，如原包装的奶粉、咖啡粉、保健品、矿泉水等；非商业原包装的其它液体、膏状、粉末类物品需提供《鉴定报告书》在发运机场报备通过后方可发运航空。
+				</div>
+				<div class="">
+					化工类：除日用化工品外（如牙膏、洗面奶、洗洁精、化妆品），其它化工类物品需提供安全属性证明材料，确认安全后，将证明材料随货寄出。若需要通过航空发运的，需提供《鉴定报告书》在发运机场报备通过后方可发运航空。
+				</div>
+				<div class="">活体动物类：除大闸蟹、甲鱼、大龙虾外，其它活物体动物禁止收寄。</div>
+				<div class="">电池类：</div>
+				<div class="">①航空收寄标准：</div>
+				<div class="">检测报告：必须提供符合UN38.3测试和1.2米跌落试验相关检查报告；</div>
+				<div class="">报备：提供检测报告原件向机场安检报备通过后方可发运；</div>
+				<div class="">
+					包装：必须为商业包装，每台电子产品最多配2块电池，且机电分离，电池须独立密封包装；机电一体的电子产品须关机。</div>
+				<div class="">
+					②电池禁收：禁止收取摩托车、汽车、电动车（含电动单车、三轮车、平衡车）的蓄电池，禁止收取额定能量大于100WH（瓦/小时）的锂电池或充电宝。
+				</div>
+				<div class="">
+					生鲜、时令水果类：为保证物品运输品质，部分时令蔬果类单票不能超过5KG，大闸蟹单票不能超过10KG，如超出需分票寄递，各地如有特殊要求，以当地收派员核实为准。
+				</div>
+				<br />
+			</div>
+			<div>三、说明： 散单客户发至新疆单票快件计费重量不超过1KG。</div>
+		</fieldset>
+	</div>
+
+	<div style="margin-top: 5%; font-size: 1.4rem;" class="am-hide-md-up">
+		<fieldset>
+
+			<div>收寄原则：</div>
+			<div>一、禁止收寄：禁止收取易燃、易爆、易腐蚀、有毒、放射性及违法物品。</div>
+			<br />
+			<div>二、限制收寄：</div>
+			<div class="divcss5">尺寸和重量：</div>
+			<div
+				style="display: inline-block; text-align: lift; margin-left: 25px;">
+				<div class="">
+					①陆运快件：单件计费重量不超过130KG或三边（长、宽、高）分别不超过2.5米、1.5米、1.5米；</div>
+				<br />
+				<div class="">②航空快件：单件计费重量不超过80KG或三边（长、宽、高）分别不超过2.5米、1米、0.8米；</div>
+				<br />
+				<div class="">特殊说明：顺丰时效产品需按照各时效产品的重量及尺寸要求执行。</div>
+				<div class="">
+					航空限制：原商业包装液体、膏状、粉末类食品可通过航空方式发运，如原包装的奶粉、咖啡粉、保健品、矿泉水等；非商业原包装的其它液体、膏状、粉末类物品需提供《鉴定报告书》在发运机场报备通过后方可发运航空。
+				</div>
+				<div class="">
+					化工类：除日用化工品外（如牙膏、洗面奶、洗洁精、化妆品），其它化工类物品需提供安全属性证明材料，确认安全后，将证明材料随货寄出。若需要通过航空发运的，需提供《鉴定报告书》在发运机场报备通过后方可发运航空。
+				</div>
+				<div class="">活体动物类：除大闸蟹、甲鱼、大龙虾外，其它活物体动物禁止收寄。</div>
+				<div class="">电池类：</div>
+				<div class="">①航空收寄标准：</div>
+				<div class="">检测报告：必须提供符合UN38.3测试和1.2米跌落试验相关检查报告；</div>
+				<div class="">报备：提供检测报告原件向机场安检报备通过后方可发运；</div>
+				<div class="">
+					包装：必须为商业包装，每台电子产品最多配2块电池，且机电分离，电池须独立密封包装；机电一体的电子产品须关机。</div>
+				<div class="">
+					②电池禁收：禁止收取摩托车、汽车、电动车（含电动单车、三轮车、平衡车）的蓄电池，禁止收取额定能量大于100WH（瓦/小时）的锂电池或充电宝。
+				</div>
+				<div class="">
+					生鲜、时令水果类：为保证物品运输品质，部分时令蔬果类单票不能超过5KG，大闸蟹单票不能超过10KG，如超出需分票寄递，各地如有特殊要求，以当地收派员核实为准。
+				</div>
+				<br />
+			</div>
+			<div>三、说明： 散单客户发至新疆单票快件计费重量不超过1KG。</div>
+
+
+
+
+		</fieldset>
+	</div>
+
+
+	<!--===========layout-footer================-->
+	<div class="layout-footer">
+		<div class="footer">
+			<div style="background-color: #383d61" class="footer--bg"></div>
+			<div class="footer--inner">
+				<div class="container">
+					<div class="footer_main">
+						<div class="am-g">
+							<div class="am-u-md-5 ">
+								<div class="footer_main--column">
+									<strong class="footer_main--column_title">关于我们</strong>
+									<div class="footer_about">
+										<p class="footer_about--text">阿拉德(Alard.)
+											2017年，诞生于河南郑州。自成立以来始终专注于服务质量的提升，持续加强基础建设，积极研发和引进具有高科技含量的信息技术与设备以提升作业自动化水平，在国内外建立了庞大的信息采集，市场开发，物流配送，快件收派等速运业务机构及服务网络。
+										</p>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="am-u-md-5 ">
+								<div class="footer_main--column">
+									<strong class="footer_main--column_title">联系详情</strong>
+									<ul class="footer_contact_info">
+										<li class="footer_contact_info--item"><i
+											class="am-icon-phone"></i><span>服务专线：400 069 0309</span></li>
+										<li class="footer_contact_info--item"><i
+											class="am-icon-envelope-o"></i><span>1662176217.qq.com</span></li>
+										<li class="footer_contact_info--item"><i
+											class="am-icon-map-marker"></i><span>河南省郑州市郑东新区龙子湖湖心岛学府广场B座17层PHE项目组</span></li>
+										<li class="footer_contact_info--item"><i
+											class="am-icon-clock-o"></i><span>Monday - Friday, 9am
+												- 6 pm; </span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/common.js" charset="utf-8"></script>
+	<script src="assets/js/jquery-2.1.0.js" charset="utf-8"></script>
+	<script src="assets/js/amazeui.js" charset="utf-8"></script>
+	<script src="assets/js/commont.js" charset="utf-8"></script>
+</body>
+
+</html>
